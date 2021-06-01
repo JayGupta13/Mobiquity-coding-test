@@ -1,0 +1,28 @@
+.container {
+    position: absolute;
+    top: 12%;
+    left: 3%;
+}
+.card {
+    background-color: #dee2e6;
+    height: 100%;
+    align-items: center;
+    color: #032558;
+}
+h5 {
+    background-color: #dee2e6;
+    flex-direction: none;
+    height: 100%;
+    width: 100%;
+    color: #032558;
+}
+
+.static-content {
+    background-color: #061525;
+}
+.col-4 {
+    flex: initial;
+}
+.bg-color {
+    background-color: #00060c ;
+}

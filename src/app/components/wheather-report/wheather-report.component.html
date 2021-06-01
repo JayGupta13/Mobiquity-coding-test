@@ -1,0 +1,54 @@
+<div class="container">
+    <div class="row">
+        <div>
+            <h5 class="text-center mx-1 flex-column">Wheather Forcast for Next Five Days</h5>
+        </div>
+        <div>
+            <h5 class="text-center mx-1 flex-column">City : {{cityNames}}</h5>
+        </div>
+        <div class="card-deck ">
+            <div class="card col-12 mx-1 d-flex flex-row">
+                <div class="card-body col-4" *ngFor="let data of wheatherForcast; let i = index">
+                    <h6 class="card-title">Day : {{i+1}}</h6>
+                    <p class="card-text">Temperature: {{data.main.temp}}</p>
+                    <p class="card-text">Sea Level: {{data.main.sea_level}}</p>
+                </div>
+            </div>
+            <div *ngIf="wheatherForcast" class=" card-footer text-center">
+                <button class="btn btn-primary" (click)="navigateToHome($event)"> Back To Home </button>
+            </div>
+        </div>
+        <div class="static-content d-flex ">
+            <div class="col-4 flex-unset">
+                <div class="card-body">
+                    <h4 class="text-white">Some Info</h4>
+                    <p class="card-text text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Illo saepe assumenda dolorem modi, expedita voluptatum ducimus necessitatibus.
+                        Asperiores quod reprehenderit necessitatibus harum, mollitia, odit et consequatur
+                        maxime nisi amet doloremque. </p>
+                </div>
+            </div>
+            <div class="col-4 mx-3 flex-unset">
+                <div class="card-body">
+                    <h4 class="text-white">About</h4>
+                    <p class="card-text text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Illo saepe assumenda dolorem modi, expedita voluptatum ducimus necessitatibus.
+                        Asperiores quod reprehenderit necessitatibus harum, mollitia, odit et consequatur
+                        maxime nisi amet doloremque. </p>
+                </div>
+            </div>
+            <div class="col-4 mx-3 flex-unset">
+                <div class="card-body">
+                    <h4 class="text-white">The Wheather</h4>
+                    <p class="card-text text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Illo saepe assumenda dolorem modi, expedita voluptatum ducimus necessitatibus.
+                        Asperiores quod reprehenderit necessitatibus harum, mollitia, odit et consequatur
+                        maxime nisi amet doloremque. </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 mx-1 bg-color">
+            <p class="text-white">Copyright 2014 Company name. Designed by Wheather. All rights reserved</p>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,111 @@
+<div class="container">
+    <div class="row">
+        <div class="card-deck d-flex ">
+            <div class="card col-4 mx-1">
+                <img class="card-img-top" width="50" height="150" src="../../../assets/images/london.jpg"
+                    alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">{{wheatherDetails?.name}}</h5>
+                    <p class="card-text">Temperature: {{wheatherDetails?.main.temp}}</p>
+                    <p class="card-text">Sunrise: {{wheatherDetails?.sys.sunrise}}</p>
+                    <p class="card-text">Sunset: {{wheatherDetails?.sys.sunset}}</p>
+                </div>
+                <div class="card-footer text-center">
+                    <a href="javascript:void(0);" (click)="navigateToReport($event, 'London')"> <small
+                            class="text-muted">Get Wheather Report</small></a>
+                </div>
+            </div>
+            <div class="card col-4 mx-3">
+                <img class="card-img-top" width="50" height="150" src="../../../assets/images/amsterdam.jpg"
+                    alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Amsterdam </h5>
+                    <p class="card-text">Temperature: {{wheatherDetails?.main.temp}}</p>
+                    <p class="card-text">Sunrise: {{wheatherDetails?.sys.sunrise}}</p>
+                    <p class="card-text">Sunset: {{wheatherDetails?.sys.sunset}}</p>
+                </div>
+                <div class="card-footer text-center">
+                    <a href="javascript:void(0);" (click)="navigateToReport($event, 'Amsterdam')"> <small
+                            class="text-muted">Get Wheather Report</small></a>
+                </div>
+            </div>
+            <div class="card col-4 mx-2">
+                <img class="card-img-top" width="50" height="150" src="../../../assets/images/paris.jpg"
+                    alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Paris</h5>
+                    <p class="card-text">Temperature: {{wheatherDetails?.main.temp}}</p>
+                    <p class="card-text">Sunrise: {{wheatherDetails?.sys.sunrise}}</p>
+                    <p class="card-text">Sunset: {{wheatherDetails?.sys.sunset}}</p>
+                </div>
+                <div class="card-footer text-center">
+                    <a href="javascript:void(0);" (click)="navigateToReport($event, 'Paris')"> <small
+                            class="text-muted">Get Wheather Report</small></a>
+                </div>
+            </div>
+
+        </div>
+        <div class="w-100 row py-3">
+            <div class="card col-4 mx-3">
+                <img class="card-img-top" width="50" height="150" src="../../../assets/images/berlin.jpg"
+                    alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title"> Berlin</h5>
+                    <p class="card-text">Temperature: {{wheatherDetails?.main.temp}}</p>
+                    <p class="card-text">Sunrise: {{wheatherDetails?.sys.sunrise}}</p>
+                    <p class="card-text">Sunset: {{wheatherDetails?.sys.sunset}}</p>
+                </div>
+                <div class="card-footer text-center">
+                    <a href="javascript:void(0);" (click)="navigateToReport($event, 'Berlin')"> <small
+                            class="text-muted">Get Wheather Report</small></a>
+                </div>
+            </div>
+            <div class="card col-4 mx-3">
+                <img class="card-img-top" width="50" height="150" src="../../../assets/images/athens.jpg"
+                    alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title"> Athens</h5>
+                    <p class="card-text">Temperature: {{wheatherDetails?.main.temp}}</p>
+                    <p class="card-text">Sunrise: {{wheatherDetails?.sys.sunrise}}</p>
+                    <p class="card-text">Sunset: {{wheatherDetails?.sys.sunset}}</p>
+                </div>
+                <div class="card-footer text-center">
+                    <a href="javascript:void(0);" (click)="navigateToReport($event, 'Athens')"> <small
+                            class="text-muted">Get Wheather Report</small></a>
+                </div>
+            </div>
+        </div>
+        <div class="static-content py-3 d-flex ">
+            <div class="col-4 flex-unset">
+                <div class="card-body">
+                    <h5 class="text-white">Some Info</h5>
+                    <p class="card-text text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Illo saepe assumenda dolorem modi, expedita voluptatum ducimus necessitatibus.
+                        Asperiores quod reprehenderit necessitatibus harum, mollitia, odit et consequatur
+                        maxime nisi amet doloremque. </p>
+                </div>
+            </div>
+            <div class="col-4 mx-3 flex-unset">
+                <div class="card-body">
+                    <h5 class="text-white">About</h5>
+                    <p class="card-text text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Illo saepe assumenda dolorem modi, expedita voluptatum ducimus necessitatibus.
+                        Asperiores quod reprehenderit necessitatibus harum, mollitia, odit et consequatur
+                        maxime nisi amet doloremque. </p>
+                </div>
+            </div>
+            <div class="col-4 mx-3 flex-unset">
+                <div class="card-body">
+                    <h5 class="text-white">The Wheather</h5>
+                    <p class="card-text text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Illo saepe assumenda dolorem modi, expedita voluptatum ducimus necessitatibus.
+                        Asperiores quod reprehenderit necessitatibus harum, mollitia, odit et consequatur
+                        maxime nisi amet doloremque. </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 mx-1 bg-color">
+            <p class="text-white">Copyright 2014 Company name. Designed by Wheather. All rights reserved</p>
+        </div>
+    </div>
+</div>
