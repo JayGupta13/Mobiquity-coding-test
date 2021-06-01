@@ -19,9 +19,6 @@ export class WheatherReportComponent implements OnInit {
       this.wheatherForcast = data.list.slice(0, 5);
       this.cityNames = this.wheatherService.city;
     });
-    // this.wheatherForcast = this.route.snapshot.data['data'];
-    // this.cityNames = this.wheatherService.city;
-    // console.log('A2 ', this.route.snapshot.data['data'], this.wheatherForcast);
   }
   navigateToHome(event: any) {
     event.preventDefault();

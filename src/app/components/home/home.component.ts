@@ -12,9 +12,6 @@ export class HomeComponent implements OnInit {
   constructor(private wheatherService: WheatherService, private route: ActivatedRoute,
      private router: Router) { }
   ngOnInit(): void {
-    // this.wheatherService.getCurrentWheatherData().subscribe((data: any) => {
-    //   this.wheatherDetails = data;
-    // });
     this.wheatherDetails = this.route.snapshot.data['data'];
   }
   navigateToReport(event: any, city: string) {
