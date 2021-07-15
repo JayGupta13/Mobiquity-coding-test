@@ -1,0 +1,17 @@
+label {
+    font-weight: bold;
+    font-size: 14px;
+}
+table {
+    display: flex;
+    border: 2px solid lightslategrey;
+    margin-top: 20px;
+}
+tr {
+    display: flex;
+    flex-direction: column;
+}
+td {
+    display: flex;
+    text-align: center;
+}

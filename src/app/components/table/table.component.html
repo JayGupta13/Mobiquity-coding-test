@@ -1,0 +1,23 @@
+<div class="container">
+    <div class="row">
+        <div style="display: flex;" >
+            <h5 class="text-center mx-3 flex-column col-6">Table shows details of the Content</h5>
+            <input class="col-4" #searchText type="text" class="form-control"
+             [(ngModel)]="searchInput" (ngModelChange)="searchItem()"/>
+            <button type="button" class="btn btn-primary" (click)="searchData(searchText.value)">Search</button>
+        </div>
+        <table class="table table-striped">
+            <thead class="thead-dark">
+              <tr>
+                <th *ngFor="let data of tableContentHearder; let i = index">{{data}}</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let data of tableContentDeatils; let i = index">
+                <td><a (click)="confirmOverlay()" [routerLink]="['/user-details', data.id]">{{data.id}}</a></td>
+                <td *ngFor="let data1 of data | keyvalue">{{data1.value}}</td>
+              </tr>             
+            </tbody>
+          </table>
+        </div>
+        </div>

@@ -1,0 +1,17 @@
+<div class="container">
+<div class="heading">
+<b>{{data?.heading}}</b>
+</div>
+<div class="content">
+    <p>{{data?.message}}</p>
+    <p>{{data?.value}}</p>
+</div>
+<div class="footer">
+<button mat-raised-button class="cancelBtn" (click)="close()">
+    <span>{{data.cancel}}</span>
+</button>
+<button mat-raised-button color="primary" class="action" (click)="action()">
+    <span>{{data.action}}</span>
+</button>
+</div>
+</div>

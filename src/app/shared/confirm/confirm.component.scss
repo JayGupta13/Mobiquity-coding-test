@@ -1,0 +1,52 @@
+.heading {
+    background: #d9dfe1;
+    display: flex;
+    padding: 3%;
+    justify-content: space-between;
+
+    b {
+        font-family: sans-serif;
+        font-size: 20px;
+        letter-spacing: 0px;
+        color: black;
+    }
+}
+
+.content {
+    padding: 11%;
+    text-align: left;
+    background: white;
+    p {
+        font-family: sans-serif;
+        font-size: 20px;
+        letter-spacing: 0px;
+        color: black;
+    }
+    b {
+        font-family: sans-serif;
+        font-size: 20px;
+        letter-spacing: 0px;
+        color: black;
+    }
+
+}
+
+.footer {
+    background: #d9dfe1;
+    display: flex;
+    padding: 3% 0;
+    justify-content: center;
+}
+.action {
+    width: 99px;
+    height: 32px;
+    line-height: 32px;
+    margin-left: 10px;
+}
+.cancelBtn {
+    width: 99px;
+    height: 32px;
+    line-height: 32px;
+    color: white;
+    background: grey;
+}
